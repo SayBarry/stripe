@@ -12,7 +12,7 @@ import pycountry
 import time
 from mm import Payment
 from telebot.types import Message,InlineKeyboardButton,InlineKeyboardMarkup,Document
-token = "7907120878:AAGR03sjvPB-2D4auzYNYfhCI6eX8Evovxo" #tok
+token = "7930384928:AAEDeYCDsN9_nuNuYcfchGEInLCuPnKQ0OY" #tok
 bot = telebot.TeleBot(token, parse_mode="HTML")
 
 
@@ -26,7 +26,7 @@ def start(message):
 def  main(message):	
     		otp = 0
     		dd = 0
-    		koko = bot.reply_to(message, "CHECKING STARTED BY BARRY...⌛").message_id
+    		koko = bot.reply_to(message, "CHECKING STARTED BY USER...⌛").message_id
     		file_info = bot.get_file(message.document.file_id)
     		ee = bot.download_file(file_info.file_path)
 
@@ -80,7 +80,7 @@ def  main(message):
                 			mes.add(cm1, status, cm4, cm5, cm6, stop)
                 
                 			bot.edit_message_text(chat_id=message.chat.id, message_id=koko,
-                                      text='''WAITING MONEY ➜ @Barry_op ''', reply_markup=mes)
+                                      text='''WAITING MONEY ➜ @MYEHRA ''', reply_markup=mes)
 
     		except Exception as e:
         						print(e)
